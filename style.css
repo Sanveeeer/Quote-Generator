@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.firstimg {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  z-index: -1;
+  top: 0;
+  right: 0;
+
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-52px);
+  }
+}
+
+.wrapper {
+  position: absolute;
+  background: #edede9;
+  width: 600px;
+  border-radius: 15px;
+  padding: 30px 30px 25px;
+}
+
+.wrapper h1 {
+  color: #e73c7e;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.wrapper .content {
+  margin: 35px 0;
+  margin-bottom: 10px;
+}
+
+.content .quote-area {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-area i {
+  font-size: 15px;
+  color: #e73c7e;
+}
+
+.quote-area i:first-child {
+  margin: 3px 10px 0 0;
+}
+
+.quote-area i:last-child {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.quote-area .quote {
+  font-size: 22px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.content .anime {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.content .character {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.anime-title,
+.character-name {
+  font-style: italic;
+}
+
+.heading {
+  color: #e73c7e;
+}
+
+.wrapper .buttons {
+  border-top: 1px solid black;
+}
+
+.buttons .clickable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.clickable ul {
+  display: flex;
+}
+
+.clickable ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  height: 47px;
+  width: 47px;
+  color: #edede9;
+  border-radius: 50%;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.clickable ul li:hover {
+  background: #e73c7e;
+}
+
+.clickable button {
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  outline: none;
+  border-radius: 30px;
+  padding: 13px 22px;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+button.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 736px) {
+  .wrapper {
+    width: 300px;
+  }
+
+  .firstimg {
+    top: 0;
+    height: 60px;
+    width: 60px;
+  }
+
+}
