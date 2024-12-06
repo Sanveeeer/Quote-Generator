@@ -206,13 +206,35 @@ button.loading {
 
 @media screen and (max-width: 736px) {
   .wrapper {
-    width: 300px;
+    width: 90%; 
+    padding: 20px; 
+  }
+
+  .wrapper h1 {
+    font-size: 30px; 
+  }
+
+  .content .quote-area .quote {
+    font-size: 18px; 
+  }
+
+  .content .anime, .content .character {
+    font-size: 16px; 
+  }
+
+  .clickable ul li {
+    height: 40px; 
+    width: 40px;
+  }
+
+  .clickable button {
+    font-size: 14px; 
+    padding: 10px 18px; 
   }
 
   .firstimg {
-    top: 0;
-    height: 60px;
-    width: 60px;
+    top: 17px;
+    height: 40px; 
+    width: 40px;
   }
-
 }
